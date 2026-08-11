@@ -16,7 +16,7 @@
         color: white;
     }
 
-    /* BARRA */
+    /* BARRA DE NAVEGACIÓN */
 
     .navbar {
         background: #160d24;
@@ -98,10 +98,16 @@
 
     /* BOTONES */
 
+    .botones {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 18px;
+    }
+
     .boton {
         display: inline-block;
-        margin: 18px 6px 5px;
-        padding: 13px 25px;
+        padding: 13px 30px;
         background: #8e44ff;
         color: white;
         text-decoration: none;
@@ -151,9 +157,12 @@
             padding: 12px;
         }
 
+        .botones {
+            gap: 8px;
+        }
+
         .boton {
-            display: block;
-            margin: 12px 0 5px;
+            padding: 12px 25px;
         }
 
     }
@@ -168,14 +177,12 @@
 
     <a href="#videos">🎬 Videos</a>
 
-    <a href="#mods">📦 Mods</a>
-
     <a href="#descargas">📥 Downloads</a>
 
 </nav>
 
 
-<!-- INICIO -->
+<!-- CONTENIDO -->
 
 <main class="contenedor" id="inicio">
 
@@ -200,43 +207,33 @@
 
         </a>
 
-        <a
-            class="boton"
-            href="https://www.youtube.com/watch?v=i4gG77tJeJg"
-            target="_blank"
-            rel="noopener noreferrer">
 
-            ▶️ Watch on YouTube
+        <!-- BOTONES JUNTOS -->
 
-        </a>
+        <div class="botones">
 
-    </section>
+            <a
+                class="boton"
+                href="https://www.youtube.com/watch?v=i4gG77tJeJg"
+                target="_blank"
+                rel="noopener noreferrer">
 
+                Video
 
-    <!-- MOD -->
-
-    <section class="tarjeta" id="mods">
-
-        <h2>📦 Mod</h2>
-
-    </section>
+            </a>
 
 
-    <!-- DESCARGA -->
+            <a
+                class="boton boton-download"
+                href="https://www.mediafire.com/file/robnz69zl8d6srm/%25F0%259D%2598%2588%25F0%259D%2598%25AF%25F0%259D%2598%25A2%25F0%259D%2598%25B3%25F0%259D%2598%25AA%25F0%259D%2598%25A6%25F0%259D%2598%25B9%25F0%259D%2598%25A6.7z/file"
+                target="_blank"
+                rel="noopener noreferrer">
 
-    <section class="tarjeta" id="descargas">
+                Download
 
-        <h2>📥 Download</h2>
+            </a>
 
-        <a
-            class="boton boton-download"
-            href="https://www.mediafire.com/file/robnz69zl8d6srm/%25F0%259D%2598%2588%25F0%259D%2598%25AF%25F0%259D%2598%25A2%25F0%259D%2598%25B3%25F0%259D%2598%25AA%25F0%259D%2598%25A6%25F0%259D%2598%25B9%25F0%259D%2598%25A6.7z/file"
-            target="_blank"
-            rel="noopener noreferrer">
-
-            Download
-
-        </a>
+        </div>
 
     </section>
 
@@ -250,4 +247,4 @@
 </footer>
 
 </body>
-    </html>
+</html>

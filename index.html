@@ -12,30 +12,32 @@
     body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
-        background: #0b0712;
+        background:
+            radial-gradient(circle at top, #17265c 0%, #0b0716 42%, #05040b 100%);
         color: white;
+        min-height: 100vh;
     }
 
     /* BARRA DE NAVEGACIÓN */
 
     .navbar {
-        background: #160d24;
-        border-bottom: 1px solid #38204f;
+        background: rgba(7, 8, 22, 0.92);
+        border-bottom: 1px solid #3156b8;
         padding: 12px;
         text-align: center;
         position: sticky;
         top: 0;
         z-index: 100;
+        backdrop-filter: blur(10px);
     }
 
     .navbar a {
         display: inline-flex;
         align-items: center;
         gap: 7px;
-        color: #ddd;
+        color: #dce7ff;
         text-decoration: none;
-        padding: 10px 17px;
-        margin: 3px;
+        padding: 10px 20px;
         border-radius: 8px;
         font-weight: bold;
         transition: 0.25s;
@@ -43,15 +45,15 @@
 
     .navbar a:hover,
     .navbar a:active {
-        background: #8e44ff;
+        background: linear-gradient(135deg, #315ee8, #7b3fe4);
         color: white;
+        box-shadow: 0 0 18px rgba(76, 103, 230, 0.45);
     }
 
     /* ICONOS */
 
     .icon {
         font-size: 18px;
-        font-weight: normal;
         line-height: 1;
     }
 
@@ -64,25 +66,32 @@
         text-align: center;
     }
 
+    /* TITULO */
+
     h1 {
-        color: #b77aff;
         font-size: 40px;
         margin-bottom: 30px;
+        background: linear-gradient(90deg, #67a8ff, #b17cff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
     /* TARJETA */
 
     .tarjeta {
-        background: #15101d;
-        border: 1px solid #332043;
+        background: rgba(13, 13, 29, 0.88);
+        border: 1px solid #3156a8;
         border-radius: 18px;
         padding: 18px;
         margin-bottom: 30px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+        box-shadow:
+            0 10px 30px rgba(0, 0, 0, 0.45),
+            0 0 20px rgba(56, 91, 190, 0.12);
     }
 
     .tarjeta h2 {
-        color: #d4a8ff;
+        color: #9ebfff;
         margin: 5px 0 18px;
     }
 
@@ -94,7 +103,8 @@
         aspect-ratio: 16 / 9;
         overflow: hidden;
         border-radius: 14px;
-        background: black;
+        background: #05050a;
+        border: 1px solid #4c63bd;
     }
 
     .miniatura img {
@@ -125,36 +135,40 @@
         justify-content: center;
         gap: 8px;
         padding: 13px 28px;
-        background: #8e44ff;
+        background: linear-gradient(135deg, #3169e8, #7541dc);
         color: white;
         text-decoration: none;
         border-radius: 9px;
         font-size: 16px;
         font-weight: bold;
+        border: 1px solid #668cff;
         transition: 0.25s;
+        box-shadow: 0 0 12px rgba(65, 93, 210, 0.2);
     }
 
     .boton:hover {
-        background: #a96cff;
+        background: linear-gradient(135deg, #4380ff, #9158ee);
         transform: translateY(-2px);
+        box-shadow: 0 0 20px rgba(91, 115, 235, 0.45);
     }
 
     .boton-download {
-        background: #5d2ca8;
+        background: linear-gradient(135deg, #543bc4, #873ed8);
+        border-color: #9b73ff;
     }
 
     .boton-download:hover {
-        background: #7540c9;
+        background: linear-gradient(135deg, #654be0, #9c50ec);
     }
 
-    /* PIE */
+    /* PIE DE PAGINA */
 
     footer {
-        background: #100a18;
-        border-top: 1px solid #2d1c3d;
+        background: rgba(5, 5, 13, 0.9);
+        border-top: 1px solid #283f7d;
         padding: 22px;
         text-align: center;
-        color: #8f829d;
+        color: #8999c2;
     }
 
     /* CELULAR */
@@ -163,11 +177,6 @@
 
         h1 {
             font-size: 32px;
-        }
-
-        .navbar a {
-            padding: 8px 10px;
-            font-size: 14px;
         }
 
         .tarjeta {
@@ -191,13 +200,11 @@
 <nav class="navbar">
 
     <a href="#inicio">
-        <span class="icon">⌂</span>
-        Home
-    </a>
 
-    <a href="#videos">
-        <span class="icon">▶</span>
-        Videos
+        <span class="icon">⌂</span>
+
+        Home
+
     </a>
 
 </nav>
@@ -212,7 +219,7 @@
 
     <!-- VIDEO -->
 
-    <section class="tarjeta" id="videos">
+    <section class="tarjeta">
 
         <h2>Video</h2>
 
@@ -240,6 +247,7 @@
                 rel="noopener noreferrer">
 
                 <span class="icon">▶</span>
+
                 Video
 
             </a>
@@ -252,6 +260,7 @@
                 rel="noopener noreferrer">
 
                 <span class="icon">↓</span>
+
                 Download
 
             </a>
@@ -270,4 +279,4 @@
 </footer>
 
 </body>
-                    </html>
+    </html>

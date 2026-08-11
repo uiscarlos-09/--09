@@ -1,87 +1,292 @@
 <!DOCTYPE html><html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>everlasting</title><style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Mi Página DBZ TTT</title>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
-        background: #0d0814;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #0b0712;
         color: white;
+    }
+
+    /* BARRA DE NAVEGACIÓN */
+
+    .navbar {
+        width: 100%;
+        background: #160d24;
+        border-bottom: 1px solid #38204f;
+        padding: 15px 10px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .navbar a {
+        display: inline-block;
+        color: #ddd;
+        text-decoration: none;
+        padding: 10px 18px;
+        margin: 4px;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .navbar a:hover,
+    .navbar a:active {
+        background: #8e44ff;
+        color: white;
+    }
+
+    /* CONTENEDOR */
+
+    .contenedor {
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        padding: 35px 20px 60px;
         text-align: center;
     }
 
-    .contenedor {
-        max-width: 900px;
-        margin: auto;
-        padding: 40px 20px;
-    }
+    /* TITULO */
 
     h1 {
         color: #b77aff;
-        font-size: 40px;
+        font-size: 42px;
         margin-bottom: 10px;
     }
 
-    p {
+    .descripcion {
         color: #cfc5d9;
         font-size: 18px;
+        margin-bottom: 35px;
     }
 
-    .video {
-        margin: 30px auto;
+    /* TARJETA DEL VIDEO */
+
+    .tarjeta {
+        max-width: 850px;
+        margin: auto;
+        background: #15101d;
+        border: 1px solid #332043;
+        border-radius: 18px;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .tarjeta h2 {
+        color: #d4a8ff;
+        margin-top: 5px;
+    }
+
+    /* MINIATURA */
+
+    .miniatura {
+        position: relative;
         width: 100%;
         max-width: 800px;
+        margin: 20px auto;
+        overflow: hidden;
+        border-radius: 14px;
     }
 
-    iframe {
+    .miniatura img {
         width: 100%;
-        height: 450px;
-        border: none;
-        border-radius: 15px;
+        display: block;
+        transition: transform 0.3s;
     }
 
-    .boton {
+    .miniatura:hover img {
+        transform: scale(1.03);
+    }
+
+    /* BOTON DE YOUTUBE */
+
+    .boton-youtube {
         display: inline-block;
-        margin-top: 25px;
-        padding: 15px 30px;
+        margin: 10px;
+        padding: 14px 25px;
         background: #8e44ff;
         color: white;
         text-decoration: none;
-        font-size: 18px;
-        font-weight: bold;
         border-radius: 10px;
+        font-size: 17px;
+        font-weight: bold;
+        transition: 0.3s;
     }
 
-    .boton:hover {
+    .boton-youtube:hover {
         background: #a96cff;
+        transform: translateY(-2px);
     }
+
+    /* BOTON DE DESCARGA */
+
+    .boton-descarga {
+        display: inline-block;
+        margin: 10px;
+        padding: 14px 25px;
+        background: #5d2ca8;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 17px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .boton-descarga:hover {
+        background: #7540c9;
+        transform: translateY(-2px);
+    }
+
+    /* PIE DE PAGINA */
+
+    footer {
+        margin-top: 50px;
+        padding: 25px;
+        background: #100a18;
+        color: #8f829d;
+        text-align: center;
+        border-top: 1px solid #2d1c3d;
+    }
+
+    /* TELEFONOS */
+
+    @media (max-width: 600px) {
+
+        h1 {
+            font-size: 32px;
+        }
+
+        .descripcion {
+            font-size: 16px;
+        }
+
+        .navbar a {
+            padding: 8px 10px;
+            font-size: 14px;
+        }
+
+        .tarjeta {
+            padding: 15px;
+        }
+
+        .boton-youtube,
+        .boton-descarga {
+            display: block;
+            margin: 10px 0;
+        }
+    }
+
 </style>
 
-</head><body><div class="contenedor">
+</head><body><!-- BARRA DE NAVEGACIÓN -->
 
-    <h1>everlasting </h1>
+<nav class="navbar">
 
-    <p>Bienvenido a mi página</p>
+    <a href="#inicio">🏠 Inicio</a>
 
-    <div class="video">
-        <iframe
-            src="https://www.youtube.com/embed/i4gG77tJeJg"
-            title="Video de YouTube"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-        </iframe>
-    </div>
+    <a href="#videos">🎬 Videos</a>
 
-    <a
-        class="boton"
-        href="https://www.mediafire.com/file/robnz69zl8d6srm/%25F0%259D%2598%2588%25F0%259D%2598%25AF%25F0%259D%2598%25A2%25F0%259D%2598%25B3%25F0%259D%2598%25AA%25F0%259D%2598%25A6%25F0%259D%2598%25B9%25F0%259D%2598%25A6.7z/file"
-        target="_blank"
-        rel="noopener noreferrer">
-        Descargar archivo
-    </a>
+    <a href="#mods">📦 Mods</a>
 
-</div>
+    <a href="#descargas">📥 Descargas</a>
+
+</nav>
+
+
+<!-- INICIO -->
+
+<main class="contenedor" id="inicio">
+
+    <h1>DBZ TTT Mods</h1>
+
+    <p class="descripcion">
+        Bienvenido a mi página de mods y contenido para Dragon Ball Z Tenkaichi Tag Team.
+    </p>
+
+
+    <!-- VIDEO -->
+
+    <section class="tarjeta" id="videos">
+
+        <h2>🎬 Video</h2>
+
+        <div class="miniatura">
+
+            <img
+                src="https://i.ytimg.com/vi/i4gG77tJeJg/maxresdefault.jpg"
+                alt="Miniatura del video">
+
+        </div>
+
+        <a
+            class="boton-youtube"
+            href="https://www.youtube.com/watch?v=i4gG77tJeJg"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            ▶️ Ver en YouTube
+
+        </a>
+
+    </section>
+
+
+    <!-- MODS -->
+
+    <section class="tarjeta" id="mods" style="margin-top: 30px;">
+
+        <h2>📦 Mod</h2>
+
+        <p>
+            Aquí encontrarás información y contenido relacionado con este mod.
+        </p>
+
+    </section>
+
+
+    <!-- DESCARGA -->
+
+    <section class="tarjeta" id="descargas" style="margin-top: 30px;">
+
+        <h2>📥 Descarga</h2>
+
+        <p>
+            Puedes descargar el archivo desde MediaFire.
+        </p>
+
+        <a
+            class="boton-descarga"
+            href="https://www.mediafire.com/file/robnz69zl8d6srm/%25F0%259D%2598%2588%25F0%259D%2598%25AF%25F0%259D%2598%25A2%25F0%259D%2598%25B3%25F0%259D%2598%25AA%25F0%259D%2598%25A6%25F0%259D%2598%25B9%25F0%259D%2598%25A6.7z/file"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            📥 Descargar
+
+        </a>
+
+    </section>
+
+</main>
+
+
+<!-- PIE DE PAGINA -->
+
+<footer>
+
+    © 2026 DBZ TTT Mods
+
+</footer>
 
 </body>
-</html>
+        </html>

@@ -76,19 +76,22 @@
         margin: 5px 0 18px;
     }
 
-    /* MINIATURA */
+    /* MINIATURA 16:9 */
 
     .miniatura {
         display: block;
         width: 100%;
+        aspect-ratio: 16 / 9;
         overflow: hidden;
         border-radius: 14px;
+        background: black;
     }
 
     .miniatura img {
         display: block;
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
         transition: transform 0.3s;
     }
 
@@ -101,13 +104,17 @@
     .botones {
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 10px;
         margin-top: 18px;
     }
 
     .boton {
-        display: inline-block;
-        padding: 13px 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 13px 28px;
         background: #8e44ff;
         color: white;
         text-decoration: none;
@@ -162,7 +169,7 @@
         }
 
         .boton {
-            padding: 12px 25px;
+            padding: 12px 22px;
         }
 
     }
@@ -208,7 +215,7 @@
         </a>
 
 
-        <!-- BOTONES JUNTOS -->
+        <!-- BOTONES -->
 
         <div class="botones">
 
@@ -218,7 +225,7 @@
                 target="_blank"
                 rel="noopener noreferrer">
 
-                Video
+                ▶️ Video
 
             </a>
 
@@ -229,11 +236,20 @@
                 target="_blank"
                 rel="noopener noreferrer">
 
-                Download
+                📥 Download
 
             </a>
 
         </div>
+
+    </section>
+
+
+    <!-- SECCIÓN DE DESCARGAS -->
+
+    <section class="tarjeta" id="descargas">
+
+        <h2>📥 Downloads</h2>
 
     </section>
 
@@ -247,4 +263,4 @@
 </footer>
 
 </body>
-</html>
+        </html>

@@ -38,7 +38,6 @@
         color: #dce7ff;
         text-decoration: none;
         padding: 10px 20px;
-        margin: 3px;
         border-radius: 8px;
         font-weight: bold;
         transition: 0.25s;
@@ -78,7 +77,7 @@
         background-clip: text;
     }
 
-    /* TARJETAS */
+    /* TARJETA */
 
     .tarjeta {
         background: rgba(13, 13, 29, 0.88);
@@ -91,8 +90,11 @@
             0 0 20px rgba(56, 91, 190, 0.12);
     }
 
-    .tarjeta h2 {
+    /* NOMBRE DEL MOD */
+
+    .nombre-mod {
         color: #9ebfff;
+        font-size: 24px;
         margin: 5px 0 18px;
     }
 
@@ -184,6 +186,10 @@
             padding: 12px;
         }
 
+        .nombre-mod {
+            font-size: 21px;
+        }
+
         .botones {
             gap: 8px;
         }
@@ -208,14 +214,6 @@
 
     </a>
 
-    <a href="#mods">
-
-        <span class="icon">▣</span>
-
-        Mods
-
-    </a>
-
 </nav>
 
 
@@ -226,11 +224,16 @@
     <h1>DBZ TTT Mods</h1>
 
 
-    <!-- VIDEO -->
+    <!-- MOD 1 -->
 
     <section class="tarjeta">
 
-        <h2>Video</h2>
+        <h2 class="nombre-mod">
+            Goku Med Super Saiyajin
+        </h2>
+
+
+        <!-- MINIATURA -->
 
         <a
             class="miniatura"
@@ -240,12 +243,12 @@
 
             <img
                 src="https://img.youtube.com/vi/i4gG77tJeJg/hqdefault.jpg"
-                alt="Video">
+                alt="Goku Med Super Saiyajin">
 
         </a>
 
 
-        <!-- BOTONES DEL VIDEO -->
+        <!-- BOTONES -->
 
         <div class="botones">
 
@@ -273,37 +276,6 @@
                 Download
 
             </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- MODS SIN VIDEO -->
-
-    <section id="mods">
-
-        <div class="tarjeta">
-
-            <h2>Mods</h2>
-
-            <h2>Goku Med Super Saiyajin</h2>
-
-            <div class="botones">
-
-                <a
-                    class="boton boton-download"
-                    href="https://www.mediafire.com/file/edwnqi5flo9s3cu/Goku_Med_Super_Saiyajin.7z/file"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    <span class="icon">↓</span>
-
-                    Download
-
-                </a>
-
-            </div>
 
         </div>
 

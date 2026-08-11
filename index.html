@@ -29,7 +29,9 @@
     }
 
     .navbar a {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
         color: #ddd;
         text-decoration: none;
         padding: 10px 17px;
@@ -43,6 +45,14 @@
     .navbar a:active {
         background: #8e44ff;
         color: white;
+    }
+
+    /* ICONOS */
+
+    .icon {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1;
     }
 
     /* CONTENEDOR */
@@ -180,11 +190,15 @@
 
 <nav class="navbar">
 
-    <a href="#inicio">🏠 Home</a>
+    <a href="#inicio">
+        <span class="icon">⌂</span>
+        Home
+    </a>
 
-    <a href="#videos">🎬 Videos</a>
-
-    <a href="#descargas">📥 Downloads</a>
+    <a href="#videos">
+        <span class="icon">▶</span>
+        Videos
+    </a>
 
 </nav>
 
@@ -200,7 +214,7 @@
 
     <section class="tarjeta" id="videos">
 
-        <h2>🎬 Video</h2>
+        <h2>Video</h2>
 
         <a
             class="miniatura"
@@ -225,7 +239,8 @@
                 target="_blank"
                 rel="noopener noreferrer">
 
-                ▶️ Video
+                <span class="icon">▶</span>
+                Video
 
             </a>
 
@@ -236,20 +251,12 @@
                 target="_blank"
                 rel="noopener noreferrer">
 
-                📥 Download
+                <span class="icon">↓</span>
+                Download
 
             </a>
 
         </div>
-
-    </section>
-
-
-    <!-- SECCIÓN DE DESCARGAS -->
-
-    <section class="tarjeta" id="descargas">
-
-        <h2>📥 Downloads</h2>
 
     </section>
 
@@ -263,4 +270,4 @@
 </footer>
 
 </body>
-        </html>
+                    </html>

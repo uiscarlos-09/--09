@@ -411,11 +411,20 @@ aria-label="Buscar">
 <h1>𝘌𝘷𝘦𝘳𝘭𝘢𝘴𝘵𝘪𝘯𝘨</h1>
     
     
-<!-- 1. Android #18 -->
-    
+from pathlib import Path
+import re
+
+path = Path("/mnt/data/index.html")
+html = path.read_text(encoding="utf-8")
+
+pattern = re.compile(
+    r'<!-- 1\.\s*Android #18 -->.*?<section class="tarjeta">.*?</section>',
+    re.S
+)
+
+replacement = """<!-- 1. Android #18 -->
 
 <section class="tarjeta">
-    
 
 <h2 class="nombre-mod">
 𝘼𝙣𝙙𝙧𝙤𝙞𝙙 #18 𝙎𝙠𝙞𝙡𝙡 𝘼𝙩𝙩𝙖𝙘𝙠 𝙇𝙚𝙜𝙚𝙣𝙙𝙨
@@ -427,7 +436,7 @@ target="_blank"
 rel="noopener noreferrer">
 
 <img
-src="https://youtu.be/9yGp8YsXbTw?si=TRd_fbS4vbxtkIdf.jpg"
+src="https://img.youtube.com/vi/9yGp8YsXbTw/hqdefault.jpg"
 alt="Android #18 Skill Attack Legends">
 
 </a>
@@ -455,7 +464,7 @@ rel="noopener noreferrer">
 </a>
 
 </div>
-</section>
+</section>"""
     
 
 <!-- 1. GOKU GT -->

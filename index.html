@@ -409,20 +409,9 @@ aria-label="Buscar">
 <main class="contenedor" id="inicio">
 
 <h1>𝘌𝘷𝘦𝘳𝘭𝘢𝘴𝘵𝘪𝘯𝘨</h1>
+
     
-    
-from pathlib import Path
-import re
-
-path = Path("/mnt/data/index.html")
-html = path.read_text(encoding="utf-8")
-
-pattern = re.compile(
-    r'<!-- 1\.\s*Android #18 -->.*?<section class="tarjeta">.*?</section>',
-    re.S
-)
-
-replacement = """<!-- 1. Android #18 -->
+<!-- 1. Android #18 -->
 
 <section class="tarjeta">
 
@@ -464,7 +453,7 @@ rel="noopener noreferrer">
 </a>
 
 </div>
-</section>"""
+</section>
     
 
 <!-- 1. GOKU GT -->
